@@ -1,0 +1,32 @@
+{
+    "name": "ll/dcat-env",
+    "alias": "环境变量管理",
+    "description": "env文件查看和编辑",
+    "type": "library",
+    "keywords": ["dcat-admin", "extension"],
+    "homepage": "https://github.com/ll/dcat-env",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "多啦b梦",
+            "email": "1715109585@qq.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.1.0",
+        "dcat/laravel-admin": "~2.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "ll\\llenv\\": "src/"
+        }
+    },
+    "extra": {
+        "dcat-admin": "ll\\llenv\\DcatEnvServiceProvider",
+        "laravel": {
+            "providers": [
+                "ll\\llenv\\DcatEnvServiceProvider"
+            ]
+        }
+    }
+}
